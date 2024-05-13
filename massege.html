@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.search-bar {
+  padding: 10px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs span {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tabs span.active {
+  font-weight: bold;
+  border-bottom: 3px solid #333;
+}
+
+.messages {
+  padding: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.blue { background-color: #4285f4; }
+.pink { background-color: #e67c73; }
+.green { background-color: #32a852; }
+.red { background-color: #ea4335; }
+.purple { background-color: #9b59b6; }
+.yellow { background-color: #f1c40f; }
+
+.name {
+  font-weight: bold;
+}
+
+.text {
+  color: #666;
+}
+    </style>
+    <script>
+        // Toggle active tab
+const tabLinks = document.querySelectorAll('.tabs span');
+tabLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    tabLinks.forEach(link => link.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Messages</div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search messages" />
+        </div>
+        <div class="tabs">
+          <span class="active">Primary</span>
+          <span>General</span>
+          <span>Requests (7)</span>
+        </div>
+        <div class="messages">
+          <div class="message">
+            <div class="avatar blue"></div>
+            <div class="content">
+              <div class="name">Edem Quist</div>
+              <div class="text">Just woke up bruh</div>
+            </div>
+          </div>
+          <div class="message">
+            <div class="avatar pink"></div>
+            <div class="content">
+              <div class="name">Franca Della</div>
+              <div class="text">Received bruh. Thanks!</div>
+            </div>
+          </div>
+          <div class="message">
+            <div class="avatar green"></div>
+            <div class="content">
+              <div class="name">Jane Doe</div>
+              <div class="text">ok</div>
+            </div>
+          </div>
+          <div class="message">
+            <div class="avatar red"></div>
+            <div class="content">
+              <div class="name">Daniella Jackson</div>
+              <div class="text">2 new messages</div>
+            </div>
+          </div>
+          <div class="message">
+            <div class="avatar purple"></div>
+            <div class="content">
+              <div class="name">Juliet Makarey</div>
+              <div class="text">lol u right</div>
+            </div>
+          </div>
+          <div class="message">
+            <div class="avatar yellow"></div>
+            <div class="content">
+              <div class="name">Chantel Msiza</div>
+              <div class="text">Birthday Tomorrow!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

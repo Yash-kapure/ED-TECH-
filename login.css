@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:#05091c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color:rgb(44 44 44);;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    color: #b2b2b2;
+    font-size: 114%;
+    margin-top: 0;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -21%;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #bababa;
+    border-width: 11px;
+    border-color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.social-btn img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google {
+    background-color:rgb(44 44 44);;
+}
+
+.facebook {
+    background-color:rgb(44 44 44);;
+}
+
+.apple {
+    background-color: rgb(44 44 44);;
+}
+
+.google:hover {
+    background-color: #1a1a1a;
+}
+
+.facebook:hover {
+    background-color: #1a1a1a;
+}
+
+.apple:hover {
+    background-color: #1a1a1a;
+}
+
+
+input[type="email"],
+input[type="password"] {
+    padding: 11px;
+    width: 90%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-btn {
+    margin-left: 35%;
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #5a4eff;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.org-login {
+    text-align: center;
+    margin-top: 20px;
+    color: #6c63ff;
+    cursor: pointer;
+}
+
+
+/* Media Queries */
+
+/* For screens smaller than 480px */
+@media (max-width: 479px) {
+    .container {
+        padding: 20px;
+    }
+
+    .social-btn {
+        font-size: 14px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 14px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+    }
+}
+
+/* For screens between 480px and 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+    .container {
+        padding: 25px;
+    }
+
+    .social-btn {
+        font-size: 16px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 16px;
+    }
+
+    .login-btn {
+        font-size: 16px;
+    }
+}
+
+/* For screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+/* For screens larger than 1024px */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 600px;
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get The Course</title>
+
+    <!-- <link rel="stylesheet" href="..\css\style.css" /> -->
+    <link rel="stylesheet" href="..\css\main.css" />
+    <link rel="stylesheet" href="..\css\course-panel.css" />
+    <link rel="stylesheet" href="..\css\animation.css">
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <style>
+        .checked {
+            color: orange;
+        }
+    </style>
+
+    <script src="..\js\script.js" defer></script>
+    <script src="..\js\animation.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <i class="uil uil-bars navOpenBtn"></i>
+            <a href="#" class="logo">EdTech Acadamy</a>
+            <!-- Navbar contents -->
+            <ul class="nav-links">
+                <i class="uil uil-times navCloseBtn"></i>
+                <li>
+                    <a href="..\main.html">
+                        <p style="fill:rgb(64, 137, 255); font-size:16px">Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../category.html" style="font-size:16px">
+                        <p>Categories</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" style="font-size:16px">
+                        <p>About</p>
+                    </a>
+                </li>
+            </ul>
+            <!-- darck/light mode -->
+
+
+            <div class="checkbox">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <span class="ball"></span>
+                </label>
+            </div>
+
+            <!-- end dark /light mode -->
+
+            <!-- search contect -->
+
+            <i class="uil uil-search search-icon" id="searchIcon"></i>
+            <div class="search-box">
+                <i class="uil uil-search search-icon"></i>
+                <input type="text" placeholder="Search here..." id="searchInput" />
+            </div>
+
+            <!-- end search content -->
+
+            <!-- profile image -->
+
+            <a href="..\profile\profile.html" id="profileIcon">
+                <img src="https://cdn.vectorstock.com/i/500p/15/85/letter-yk-simple-geometric-linked-line-logo-vector-51521585.jpg" alt="Profile Icon">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="heading"><br><br><br>
+           <div class="text">
+            <h1>Web Development full Course</h1>
+            <span>10 Hours of React just added. Become a Developer With ONE course - HTML, CSS, JavaScript, React, Node,
+                MongoDB and More!</span><br><br>
+            <p>
+                <span><b style="color: orange;">4.7</b> <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </span>(206,777) 23,583 students
+            </p>
+            <p class="short-language">
+                <i class="fa fa-globe"></i> English
+            </p>
+           </div><br><br><br>
+        </section>
+
+        <div class="container">
+            <div class="video-preview">
+              <img src="https://smartifysol.com/wp-content/uploads/2023/09/development.jpeg" alt="Video Preview">
+              <div class="play-button">
+                <img src="https://img.icons8.com/?size=100&id=K25Bc22Gr3Zg&format=png&color=000000" alt="Play Button">
+              </div>
+              <p style="font-size: 105%;">
+              <h3><b>Preview this course</b></h3>
+              </p>
+            </div>
+            <hr width="100%">
+            <div class="pricing">
+              <div class="pricing-option">
+                <h3>Personal</h3>
+                <span class="price">₹549</span>
+                <span class="original-price">₹3,099</span>
+                <span class="discount">82% off</span>
+                <p class="countdown">1 day left at this price!</p>
+              </div>
+            </div>
+            <a href="..\cart.html"><button class="buy-button">Go to your Card</button></a>
+            <p class="guarantee">30-Day Money-Back Guarantee</p>
+            <p class="access">Full Lifetime Access</p>
+          </div>
+    </main>
+</body>
+
+</html>

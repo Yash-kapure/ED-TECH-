@@ -26,13 +26,13 @@
 
   <!-- Loader -->
 
-  <div class="loader-container">
+  <!-- <div class="loader-container">
     <div class="loader"></div>
   </div>
 
 
-  <div id="website-content">
-
+  <div id="website-content" class="website-content">
+ -->
 
     <!-- navbar conteiner -->
 
@@ -44,9 +44,6 @@
         <ul class="nav-links">
           <i class="uil uil-times navCloseBtn"></i>
           <li><a href="index.html"><i class="fa fa-home" style="fill:rgb(64, 137, 255); font-size:20px"></i></a>
-          </li>
-          <li>
-            <a href="#" style="font-size:20px"><i class="fa fa-book"></i></a>
           </li>
         </ul>
         <!-- darck/light mode -->
@@ -63,19 +60,33 @@
 
         <!-- end dark /light mode -->
 
+        <!-- search contect -->
+
         <i class="uil uil-search search-icon" id="searchIcon"></i>
         <div class="search-box">
           <i class="uil uil-search search-icon"></i>
-          <input type="text" placeholder="Search here..." />
+          <input type="text" placeholder="Search here..." id="searchInput" />
         </div>
 
-        <!-- profile image -->
+        <!-- end search content -->
 
-        <a href="#" id="profileIcon">
-          <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" alt="Profile Icon">
-        </a>
+        <a href="..\login\sign-up.html" id="login-Icon">
+          <button class="btn-login">Login</button> 
+         </a>
+       </nav>
       </nav>
     </header><br>
+
+    <!-- search content results -->
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-button">&times;</span>
+        <div id="results" class="card-container"></div>
+      </div>
+    </div>
+
+    <!-- end search content result -->
 
     <!-- Main -->
 
@@ -91,10 +102,6 @@
             </p>
             <a href="#read-more">
               <button class="button">Learn More</button>
-              <div class="hoverEffect">
-                <div></div>
-              </div>
-              </button>
             </a>
           </div>
           <div class="right">
@@ -147,6 +154,9 @@
 
         <!-- new header -->
 
+        <!-- web devlopment dropdown -->
+
+
         <div class="course-dropdown">
           <div class="dropdown-header">
             <h3>Web Development</h3>
@@ -160,7 +170,7 @@
           <div class="dropdown-content">
             <div class="course-cards">
               <div class="course-card">
-                <a href="index.html">
+                <a href="/login/login.html">
                   <img
                     src="https://w0.peakpx.com/wallpaper/59/567/HD-wallpaper-web-designing-training-in-pune-web-design-web-design-training-in-pune-website-design-training-web-development-course-in-pune-web-development-training-in-india-website-design-training-in-india.jpg"
                     alt="Angela Yu" class="instructor-image" style="width: 100%; border-radius: 0;">
@@ -175,7 +185,7 @@
                 </a>
               </div>
               <div class="course-card">
-                <a href="">
+                <a href="/login/login.html">
                   <img
                     src="https://e1.pxfuel.com/desktop-wallpaper/536/364/desktop-wallpaper-reasons-why-you-need-a-digital-marketing-agency-seo-digital-digital-marketing.jpg"
                     alt="Web Developer Bootcamp" style="width: 100%;">
@@ -189,7 +199,7 @@
                 </a>
               </div>
               <div class="course-card">
-                <a href="">
+                <a href="/login/login.html">
                   <img src="https://www.forbes.com/advisor/wp-content/uploads/2023/06/python-coding-graphic.jpeg.jpg"
                     style="width: 100%;" alt="Practical Web Development">
                   <h3>Python & Java : from Experte</h3>
@@ -202,7 +212,7 @@
                 </a>
               </div>
               <div class="course-card">
-                <a href="">
+                <a href="/login/login.html">
                   <img src="https://www.strivemindz.com/images/offerings/mobile/web-development.jpg"
                     style="width: 100%;" alt="Practical Web Development">
                   <h3>Practical Web Development: 22 Courses in 1</h3>
@@ -215,7 +225,7 @@
                 </a>
               </div>
               <div class="course-card">
-                <a href="">
+                <a href="/login/login.html">
                   <img src="https://cdn.servermania.com/kb/KB-MERN-Featured.jpg" style="width: 100%;"
                     alt="Practical Web Development">
                   <h3>MERN STACK : Complete Course</h3>
@@ -232,6 +242,9 @@
           </div>
         </div><br>
 
+
+        <!-- IT Certifications -->
+
         <div class="course-dropdown">
           <div class="dropdown-header">
             <h3>IT Certifications</h3>
@@ -245,7 +258,7 @@
           <div class="dropdown-content">
             <div class="course-cards">
               <div class="course-card">
-                <a href="index.html">
+                <a href="/login/login.html">
                   <img src="https://img-b.udemycdn.com/course/750x422/3142166_a637_3.jpg" alt="Angela Yu"
                     class="instructor-image" style="width: 100%; border-radius: 0;">
                   <h3>[New] Ultimate AWS Certified Cloude Practitioner CLF-C02</h3>
@@ -259,7 +272,7 @@
                 </a>
               </div>
               <div class="course-card">
-                <a href="">
+                <a href="/login/login.html">
                   <img src="https://img-b.udemycdn.com/course/750x422/2645936_2526_7.jpg" alt="Web Developer Bootcamp"
                     style="width: 100%;">
                   <h3>Amazon Web Service (AWS) Certified - 4 Certifications!</h3>
@@ -272,7 +285,7 @@
                 </a>
               </div>
               <div class="course-card">
-                <a href="">
+                <a href="/login/login.html">
                   <img
                     src="https://i.vimeocdn.com/video/1503843046-07adb6fc5d2a59c4317a2cbb4818cc41038b1f8cb85247bf61d3f053bafe7b56-d_640?f=webp"
                     style="width: 100%;" alt="Practical Web Development">
@@ -286,7 +299,7 @@
                 </a>
               </div>
               <div class="course-card">
-                <a href="">
+                <a href="/login/login.html">
                   <img src="https://k21academy.com/wp-content/uploads/2024/01/AWS-Certification-new-1.png"
                     style="width: 100%;" alt="Practical Web Development">
                   <h3>AWS Course - Updated 2023</h3>
@@ -302,6 +315,8 @@
           </div>
         </div><br>
 
+        <!-- Leadership -->
+
         <div class="course-dropdown">
           <div class="dropdown-header">
             <h3>Leadership</h3>
@@ -316,7 +331,7 @@
             <div class="dropdown-content">
               <div class="course-cards">
                 <div class="course-card">
-                  <a href="index.html">
+                  <a href="/login/login.html">
                     <img
                       src="https://img.freepik.com/free-photo/leader-authority-boss-coach-director-manager-concept_53876-133859.jpg"
                       alt="Angela Yu" class="instructor-image" style="width: 100%; border-radius: 0;">
@@ -331,7 +346,7 @@
                   </a>
                 </div>
                 <div class="course-card">
-                  <a href="">
+                  <a href="/login/login.html">
                     <img
                       src="https://cdn.tuoitre.vn/471584752817336320/2023/6/30/photo-1688116733372-1688116733533142836832.jpg"
                       alt="Web Developer Bootcamp" style="width: 100%;">
@@ -345,7 +360,7 @@
                   </a>
                 </div>
                 <div class="course-card">
-                  <a href="">
+                  <a href="/login/login.html">
                     <img src="https://strengthscape.com/wp-content/uploads/2022/09/High-Res-Img-53.jpg"
                       style="width: 100%;" alt="Practical Web Development">
                     <h3>The Complete Leadership Mastery Course</h3>
@@ -358,7 +373,7 @@
                   </a>
                 </div>
                 <div class="course-card">
-                  <a href="">
+                  <a href="/login/login.html">
                     <img
                       src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvay0xMC1tYWV3LTE1MDk5LW9sajEzMzEtMS1sZWFkZXJzaGlwLmpwZw.jpg"
                       style="width: 100%;" alt="Practical Web Development">
@@ -372,7 +387,7 @@
                   </a>
                 </div>
                 <div class="course-card">
-                  <a href="">
+                  <a href="/login/login.html">
                     <img
                       src="https://imageio.forbes.com/specials-images/imageserve/62df7418b50fd7ef6dd194e4/10-Most-Important-Leadership-Skills-For-The-21st-Century-Workplace--And-How-To/960x0.jpg?height=532&width=711&fit=bounds"
                       style="width: 100%;" alt="Practical Web Development">
@@ -390,6 +405,8 @@
           </div>
         </div><br>
 
+        <!-- Data Science  -->
+
         <div class="course-dropdown">
           <div class="dropdown-header">
             <h3>Data Science</h3>
@@ -404,7 +421,7 @@
             <div class="dropdown-content">
               <div class="course-cards">
                 <div class="course-card">
-                  <a href="index.html">
+                  <a href="/login/login.html">
                     <img src="https://img-b.udemycdn.com/course/750x422/903744_8eb2.jpg" alt="Angela Yu"
                       class="instructor-image" style="width: 100%; border-radius: 0;">
                     <h3>Python for Data Science and Machine Learning Bootcamp.</h3>
@@ -417,7 +434,7 @@
                   </a>
                 </div>
                 <div class="course-card">
-                  <a href="">
+                  <a href="/login/login.html">
                     <img
                       src="https://futurefinders.in/wp-content/uploads/2023/01/Data-Science-Training-and-Placement-in-Bangalore.jpg"
                       alt="Web Developer Bootcamp" style="width: 100%;">
@@ -432,7 +449,7 @@
                   </a>
                 </div>
                 <div class="course-card">
-                  <a href="">
+                  <a href="/login/login.html">
                     <img src="https://img-b.udemycdn.com/course/750x422/2690632_392a.jpg" style="width: 100%;"
                       alt="Practical Web Development">
                     <h3>R Programming A-Z: R for Data Science with Real...</h3>
@@ -446,7 +463,7 @@
                   </a>
                 </div>
                 <div class="course-card">
-                  <a href="">
+                  <a href="/login/login.html">
                     <img src="https://img-c.udemycdn.com/course/750x422/4324528_4ee9_2.jpg" style="width: 100%;"
                       alt="Practical Web Development">
                     <h3>Data Manipulation in Python: Masters Python, Numpy & Pandas.</h3>
@@ -459,7 +476,7 @@
                   </a>
                 </div>
                 <div class="course-card">
-                  <a href="">
+                  <a href="/login/login.html">
                     <img src="https://t3.ftcdn.net/jpg/01/86/84/24/360_F_186842473_2qX9a30zLkJBnvUQ0aMYoKmrKmZGU6bN.jpg"
                       style="width: 100%;" alt="Practical Web Development">
                     <h3>Data Science Real World Projects in Python</h3>
@@ -476,6 +493,8 @@
           </div>
         </div><br>
 
+        <!-- Communication -->
+
         <div class="course-dropdown">
           <div class="dropdown-header">
             <h3>Communication</h3>
@@ -489,7 +508,7 @@
           <div class="dropdown-content">
             <div class="course-cards">
               <div class="course-card">
-                <a href="index.html">
+                <a href="/login/login.html">
                   <img src="https://assets.entrepreneur.com/content/3x2/2000/20170919133247-GettyImages-607980182.jpeg"
                     alt="Angela Yu" class="instructor-image" style="width: 100%; border-radius: 0;">
                   <h3>The Complete Communication Skills Master Class for Life</h3>
@@ -503,7 +522,7 @@
                 </a>
               </div>
               <div class="course-card">
-                <a href="">
+                <a href="/login/login.html">
                   <img src="https://greator.com/wp-content/uploads/2023/01/shutterstock_1917298286-984x540.jpg"
                     alt="Web Developer Bootcamp" style="width: 100%;">
                   <h3>Communication Skills for Beginners</h3>
@@ -516,7 +535,7 @@
                 </a>
               </div>
               <div class="course-card">
-                <a href="">
+                <a href="/login/login.html">
                   <img src="https://strengthscape.com/wp-content/uploads/2022/09/High-Res-Img-53.jpg"
                     style="width: 100%;" alt="Practical Web Development">
                   <h3>Public Relations: Media Crisis Communications</h3>
@@ -529,7 +548,7 @@
                 </a>
               </div>
               <div class="course-card">
-                <a href="">
+                <a href="/login/login.html">
                   <img
                     src="https://drexel.edu/~/media/Images/graduatecollege/blog-graduate/achievement-3468104_640.ashx?h=447&w=640&hash=39AC2126B7DBA51E4B454E09B483343839EAAF24"
                     style="width: 100%;" alt="Practical Web Development">
@@ -543,7 +562,7 @@
                 </a>
               </div>
               <div class="course-card">
-                <a href="">
+                <a href="/login/login.html">
                   <img src="https://cdn-images.zety.com/pages/communication_skills_zety_uk_2.jpg" style="width: 100%;"
                     alt="Practical Web Development">
                   <h3>Excellence in Business and Personal Communication Skills</h3>
@@ -558,26 +577,39 @@
             </div>
           </div>
         </div><br><br><br><br><br>
+
       </section>
+
+
+      <!-- banners  -->
+
+
       <div class="banner">
-        <center><h1>This Companies is Supported as</h1></center><br><br>
+        <center>
+          <h1>This Companies is Supported as</h1>
+        </center><br><br>
         <h2>Trusted by over 15,000 companies and millions of learners around the world</h2>
         <div class="logo-container">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png" alt="Google">
-          <img src="https://static.vecteezy.com/system/resources/thumbnails/020/336/289/small_2x/samsung-logo-samsung-icon-free-free-vector.jpg"
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png"
+            alt="Google">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/020/336/289/small_2x/samsung-logo-samsung-icon-free-free-vector.jpg"
             alt="Samsung">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Wipro_Primary_Logo_Color_RGB.svg" alt="wipro">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1280px-Infosys_logo.svg.png" alt="infosis">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1280px-Infosys_logo.svg.png"
+            alt="infosis">
           <img src="https://cdn.freebiesupply.com/images/large/2x/sony-logo-black-and-white.png" alt="sony">
+          <img src="https://logodix.com/logo/995526.png" alt="apple">
           <img
-            src="https://logodix.com/logo/995526.png"
-            alt="apple">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Microsoft_logo_-_2012_%28vertical%29.svg/1910px-Microsoft_logo_-_2012_%28vertical%29.svg.png" alt="microsoft">
-          <img
-            src="https://caproasia.com/wp-content/uploads/2015/07/Blackrock-Logo-Thumbnail.jpg"
-            alt="black rock">
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Microsoft_logo_-_2012_%28vertical%29.svg/1910px-Microsoft_logo_-_2012_%28vertical%29.svg.png"
+            alt="microsoft">
+          <img src="https://caproasia.com/wp-content/uploads/2015/07/Blackrock-Logo-Thumbnail.jpg" alt="black rock">
         </div>
       </div><br><br><br><br>
+
+
       <section>
         <div class="container-goals">
           <h1>Learning focused on your goals</h1><br><br>
@@ -609,6 +641,8 @@
           </div>
         </div>
       </section><br><br><br><br><br>
+
+
       <div class="container-upskill">
         <div class="text-content">
           <h1>Booz | Allen | Hamilton</h1>
@@ -634,69 +668,6 @@
       <section>
         <footer>
           <div class="footer">
-            <div class="card">
-              <div class="background"></div>
-              <div class="logo">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 29.667 31.69"
-                  class="logo-svg"
-                >
-                  <path
-                    id="Path_6"
-                    data-name="Path 6"
-                    d="M12.827,1.628A1.561,1.561,0,0,1,14.31,0h2.964a1.561,1.561,0,0,1,1.483,1.628v11.9a9.252,9.252,0,0,1-2.432,6.852q-2.432,2.409-6.963,2.409T2.4,20.452Q0,18.094,0,13.669V1.628A1.561,1.561,0,0,1,1.483,0h2.98A1.561,1.561,0,0,1,5.947,1.628V13.191a5.635,5.635,0,0,0,.85,3.451,3.153,3.153,0,0,0,2.632,1.094,3.032,3.032,0,0,0,2.582-1.076,5.836,5.836,0,0,0,.816-3.486Z"
-                    transform="translate(0 0)"
-                  ></path>
-                  <path
-                    id="Path_7"
-                    data-name="Path 7"
-                    d="M75.207,20.857a1.561,1.561,0,0,1-1.483,1.628h-2.98a1.561,1.561,0,0,1-1.483-1.628V1.628A1.561,1.561,0,0,1,70.743,0h2.98a1.561,1.561,0,0,1,1.483,1.628Z"
-                    transform="translate(-45.91 0)"
-                  ></path>
-                  <path
-                    id="Path_8"
-                    data-name="Path 8"
-                    d="M0,80.018A1.561,1.561,0,0,1,1.483,78.39h26.7a1.561,1.561,0,0,1,1.483,1.628v2.006a1.561,1.561,0,0,1-1.483,1.628H1.483A1.561,1.561,0,0,1,0,82.025Z"
-                    transform="translate(0 -51.963)"
-                  ></path>
-                </svg>
-              </div>
-              <div class="box box1">
-                <span class="icon"
-                  ><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="svg">
-                    <path
-                      d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"
-                    ></path></svg
-                ></span>
-              </div>
-              <div class="box box2">
-                <span class="icon"
-                  ><svg
-                    viewBox="0 0 512 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="svg"
-                  >
-                    <path
-                      d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-                    ></path></svg
-                ></span>
-              </div>
-              <div class="box box3">
-                <span class="icon"
-                  ><svg
-                    viewBox="0 0 640 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="svg"
-                  >
-                    <path
-                      d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
-                    ></path></svg
-                ></span>
-              </div>
-              <div class="box box4"></div>
-            </div>            
-
             <div class="row">
               <ul>
                 <li><a href="#">Contact us</a></li>
